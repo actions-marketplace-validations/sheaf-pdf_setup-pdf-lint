@@ -1,0 +1,13 @@
+{
+  "name": "setup-pdf-lint",
+  "private": true,
+  "description": "Install pdf-lint, with the qpdf it decodes with, on a GitHub Actions runner",
+  "license": "Apache-2.0",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}

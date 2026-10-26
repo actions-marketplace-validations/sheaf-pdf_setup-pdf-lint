@@ -1,0 +1,21 @@
+name: Setup pdf-lint
+description: Install pdf-lint, which checks PDF files against the Arlington PDF Model, with the qpdf it decodes with
+branding:
+  icon: check-square
+  color: red
+
+inputs:
+  version:
+    description: The pdf-lint version to install, such as 0.1.0, or latest
+    required: false
+    default: latest
+
+outputs:
+  version:
+    description: The pdf-lint version installed
+  path:
+    description: The folder pdf-lint was unpacked into, which is put on the PATH; the qpdf it decodes with is in its qpdf/
+
+runs:
+  using: node24
+  main: index.js
